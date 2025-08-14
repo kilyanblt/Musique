@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Ton Nom d'Artiste – Site Officiel</title>
+<meta name="description" content="Sons, clips, dates et contact." />
+<style>
+  *{box-sizing:border-box}html,body{margin:0;padding:0}
+  :root{--bg:#0b0b0e;--bg2:#11121a;--card:#151726;--text:#e7e7ea;--muted:#a9a9b4;--border:#25273a;--p1:#7c5cff;--p2:#3ae6ff}
+  body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+  a{color:var(--text);text-decoration:none}
+  .wrap{max-width:1100px;margin:0 auto;padding:18px}
+  header{position:sticky;top:0;z-index:10;background:rgba(11,11,14,.6);backdrop-filter:blur(10px);border-bottom:1px solid var(--border)}
+  .bar{display:flex;align-items:center;justify-content:space-between;padding:12px 18px}
+  .brand{font-weight:800}
+  .nav{display:flex;gap:14px}
+  .nav a{padding:6px 10px;border-radius:10px}
+  .nav a:hover{background:var(--card)}
+  .hero{padding:48px 18px;background:linear-gradient(135deg,var(--bg) 0%,var(--bg2) 100%)}
+  .hero h1{font-size:clamp(28px,8vw,56px);margin:0 0 10px}
+  .hero p{margin:0 0 20px;color:var(--muted)}
+  .cta a{display:inline-block;margin-right:10px;padding:10px 16px;border-radius:14px;border:1px solid var(--border);font-weight:700}
+  .cta .primary{border:0;background:linear-gradient(90deg,var(--p1),var(--p2));color:#0b0b0e}
+  section{padding:42px 18px;border-top:1px solid var(--border)}
+  h2{margin:0 0 12px;font-size:clamp(22px,6vw,34px)}
+  .muted{color:var(--muted)}
+  .card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:14px}
+  .grid{display:grid;gap:16px}
+  .tracks{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+  .tour .row{display:flex;align-items:center;justify-content:space-between;border:1px solid var(--border);border-radius:12px;padding:12px}
+  .footer{padding:20px 18px;text-align:center;border-top:1px solid var(--border)}
+  iframe{width:100%;aspect-ratio:16/9;border:0;border-radius:12px}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="bar wrap">
+    <div class="brand">Ton Nom d'Artiste</div>
+    <nav class="nav">
+      <a href="#music">Musique</a>
+      <a href="#video">Clips</a>
+      <a href="#tour">Dates</a>
+      <a href="#about">Bio</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <h1>Ton Nom d'Artiste</h1>
+    <p>Rap / Pop / Afro — Nouveau single dispo.</p>
+    <div class="cta">
+      <a class="primary" href="#music">Écouter</a>
+      <a href="#contact">Booking</a>
+    </div>
+  </div>
+</section>
+
+<section id="music">
+  <div class="wrap">
+    <h2>Musique</h2>
+    <p class="muted">Démo sans fichier audio (tout est dans ce fichier). Tu pourras lier un MP3 plus tard.</p>
+    <div class="grid tracks">
+      <div class="card">
+        <h3>Demo Track</h3>
+        <p class="muted">Générée via le navigateur</p>
+        <div style="display:flex;gap:10px;flex-wrap:wrap">
+          <button id="play" style="padding:8px 12px;border-radius:10px;border:1px solid var(--border);background:var(--bg2);color:var(--text)">▶️ Play</button>
+          <button id="stop" style="padding:8px 12px;border-radius:10px;border:1px solid var(--border);background:var(--bg2);color:var(--text)">⏹ Stop</button>
+          <a href="#" class="muted">Spotify</a>
+          <a href="#" class="muted">Apple Music</a>
+          <a href="#" class="muted">YouTube</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="video">
+  <div class="wrap">
+    <h2>Clips</h2>
+    <div class="card">
+      <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen title="Clip"></iframe>
+    </div>
+  </div>
+</section>
+
+<section id="tour">
+  <div class="wrap">
+    <h2>Dates</h2>
+    <div class="grid">
+      <div class="tour row">
+        <div>
+          <strong>Ronchamp — Le Relais Campagnard</strong>
+          <div class="muted">Samedi 30 août 2025 • 21:00</div>
+        </div>
+        <a href="#" style="padding:8px 12px;border:1px solid var(--border);border-radius:10px">Billetterie</a>
+      </div>
+      <div class="tour row">
+        <div>
+          <strong>Besançon — La Rodia</strong>
+          <div class="muted">Vendredi 12 sept. 2025 • 20:30</div>
+        </div>
+        <a href="#" style="padding:8px 12px;border:1px solid var(--border);border-radius:10px">Billetterie</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap">
+    <h2>Bio</h2>
+    <div class="card">
+      Artiste indépendant basé en France. Flow énergique, mélodies accrocheuses, textes authentiques. EP en préparation.
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <h2>Contact</h2>
+    <div class="card">
+      <form action="mailto:tonmail@example.com" method="post" enctype="text/plain" style="display:grid;gap:10px">
+        <input name="name" placeholder="Ton nom" required style="padding:10px;border-radius:10px;border:1px solid var(--border);background:var(--bg2);color:var(--text)">
+        <input name="email" type="email" placeholder="Ton e-mail" required style="padding:10px;border-radius:10px;border:1px solid var(--border);background:var(--bg2);color:var(--text)">
+        <textarea name="message" rows="4" placeholder="Ton message" style="padding:10px;border-radius:10px;border:1px solid var(--border);background:var(--bg2);color:var(--text)"></textarea>
+        <button type="submit" style="padding:10px 16px;border-radius:12px;border:0;background:linear-gradient(90deg,var(--p1),var(--p2));color:#0b0b0e;font-weight:800">Envoyer</button>
+        <small class="muted">Astuce: tu peux remplacer ce mailto par Formspree/Netlify Forms plus tard.</small>
+      </form>
+    </div>
+  </div>
+</section>
+
+<div class="footer">© <span id="year"></span> Ton Nom d'Artiste — Tous droits réservés.</div>
+
+<script>
+  // Année
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Démo audio sans fichier: un oscillateur WebAudio (bip mélodique 4 notes)
+  let ctx, osc, gain, seqTimer;
+  function startTone(freq=440) {
+    if (!ctx) ctx = new (window.AudioContext||window.webkitAudioContext)();
+    osc = ctx.createOscillator(); gain = ctx.createGain();
+    osc.type = "sine"; osc.frequency.value = freq;
+    gain.gain.value = 0.15;
+    osc.connect(gain).connect(ctx.destination);
+    osc.start();
+  }
+  function stopTone() {
+    if (osc) { osc.stop(); osc.disconnect(); osc=null; }
+    if (gain) { gain.disconnect(); gain=null; }
+    if (seqTimer) { clearInterval(seqTimer); seqTimer=null; }
+  }
+  const notes = [440,523.25,659.25,587.33]; // A C E D
+  document.getElementById('play').addEventListener('click', ()=>{
+    stopTone();
+    let i=0;
+    startTone(notes[0]);
+    seqTimer = setInterval(()=>{
+      if(!ctx) return;
+      i=(i+1)%notes.length;
+      if(osc) osc.frequency.setValueAtTime(notes[i], ctx.currentTime);
+    }, 400);
+  });
+  document.getElementById('stop').addEventListener('click', stopTone);
+
+  // Scroll doux
+  document.querySelectorAll('a[href^="#"]').forEach(a=>{
+    a.addEventListener('click',e=>{
+      const id=a.getAttribute('href').slice(1);
+      const t=document.getElementById(id);
+      if(t){e.preventDefault(); t.scrollIntoView({behavior:'smooth'})}
+    })
+  });
+</script>
+
+</body>
+</html>
